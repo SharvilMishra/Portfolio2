@@ -3769,7 +3769,7 @@ void main() {
     },
     {
       facet: "Facet IV",
-      name: "IUDEX",
+      name: "e-CON",
       desc: "A username-based real-time messaging app \u2014 find anyone by their @username and start a private conversation.",
       stack: [],
       live: "https://iudex-plum.vercel.app/",
