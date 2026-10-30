@@ -24,7 +24,11 @@ python -m http.server 8000
 ## Editing content
 
 Everything shown on the page lives in the readable section at the **bottom of `script.js`**, under the
-`PORTFOLIO APP` comment: `PROJECTS`, `TIMELINE`, `SKILL_GROUPS`, `MARQUEE_ITEMS`, and the contact details.
+`PORTFOLIO APP` comment: `PROJECTS`, `GAMES`, `TIMELINE`, `SKILL_GROUPS`, `MARQUEE_ITEMS`, and the contact details.
+
+To add a game, add an entry to `GAMES` with a unique URL-safe `slug`, `name`, `desc`, `url`, and optional
+`stack`, `github`, and `offset` fields. It will appear in Work with a **Play** link, and the portfolio will
+redirect `?play=<slug>` to its `url` (for example, `?play=your-game`).
 The "Work" heading counts the projects automatically.
 
 > `script.js` is a build output — there is no `src/` or `package.json` in this repository. To change the
